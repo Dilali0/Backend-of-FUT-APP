@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="../assets/css/all.css">
+  <link rel="stylesheet" href="../assets/Css/all.min.css">
+  <link rel="stylesheet" href="../assets/Css/dashboard.css">
+  <link href="https://cdn.jsdelivr.net/npm/tom-select@2.4.1/dist/css/tom-select.default.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+              <img src="../assets/img/logo.webp" alt="logo" width="50px">
+               <h3>FUT Dashboard</h3>
+              <div class="admin">
+                <img src="../assets/img/admin.jpeg" alt="admin">
+                <p>Ismail Dilali</p>
+              </div>
+    </header>
+    <section id="container">
+        <nav>
+            <div class="profil">
+                <img src="../assets/img/admin.jpeg" alt="admin">
+                <label for="">Ismail Dilali</label>
+              </div>
+              <div class="links">
+              <ul>
+                 <li> <a href="./Dashboard.html"> <i class="fa-solid fa-house"></i> Dashboard  </a></li>
+                 <li> <a href="./Ajouter.html"> <i class="fa-solid fa-chalkboard-user"></i> Table </a></li>
+                 <li> <a href="../index.html"> <i class="fa-solid fa-chalkboard-user"></i> User  </a></li>
+              </ul>
+              </div>
+        </nav>
+        <main>
+          <h1>ADD Player</h1>
+           <div>
+           <div id="formul">
+            <div>
+              <form id="formulaire" action="">
+                  <div class="file-upload">
+                  <img src="../assets/img/user-icon-1024x1024-unb6q333.png" alt="Preview" id="face">
+                  <div class="design-input">
+                   <label for="photo">Upload Photo</label>
+                  <input id="photo" type="file" accept="image/*"> 
+                  </div>
+                     </div>
+            
+                <!-- Player Information -->
+                <div class="player-info" style="display: flex; gap: 15px;">
+                  <div style="flex: 1;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter player name" required>
+                  </div>
+            
+                  <div style="flex: 1;">
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position" placeholder="Enter player position" required>
+                  </div>
+                </div>
+            
+                <div class="select-info" style="display: flex; gap: 15px; margin-top: 15px;">
+                  <div style="flex: 1;">
+                    <label for="team">Club:</label>
+                    <select id="club" name="club">
+                      <option value=""></option>
+                    </select>
+                  </div>
+            
+                  <div style="flex: 1;">
+                    <label for="league">Nationality:</label>
+                    <select id="flag" name="flag">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+            
+                <div class="player-attributes" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 15px;">
+                  <div>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="0" max="99" placeholder="Rating" required>
+                  </div>
+            
+                  <div>
+                    <label for="pace">Pace:</label>
+                    <input type="number" id="pace" name="pace" min="0" max="99" placeholder="Pace" required>
+                  </div>
+            
+                  <div>
+                    <label for="shooting">Shooting:</label>
+                    <input type="number" id="shooting" name="shooting" min="0" max="99" placeholder="Shooting" required>
+                  </div>
+            
+                  <div>
+                    <label for="passing">Passing:</label>
+                    <input type="number" id="passing" name="passing" min="0" max="99" placeholder="Passing" required>
+                  </div>
+            
+                  <div>
+                    <label for="dribbling">Dribbling:</label>
+                    <input type="number" id="dribbling" name="dribbling" min="0" max="99" placeholder="Dribbling" required>
+                  </div>
+            
+                  <div>
+                    <label for="defending">Defending:</label>
+                    <input type="number" id="defending" name="defending" min="0" max="99" placeholder="Defending" required>
+                  </div>
+            
+                  <div>
+                    <label for="physical">Physical:</label>
+                    <input type="number" id="physical" name="physical" min="0" max="99" placeholder="Physical" required>
+                  </div>
+                </div>
+            
+                <!-- Submit Button -->
+                <button id="submitBtn" type="submit" style="margin-top: 20px; align-self: center;">Add Player</button>
+              </form>
+            </div>
+           </div>
+           </div>
+        </main>
+    </section>
+    <script src="../assets/js/add.js"></script>
+</body>
+</html>

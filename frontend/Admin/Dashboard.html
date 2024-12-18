@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/all.css">
+  <link rel="stylesheet" href="../assets/Css/all.min.css">
+  <link rel="stylesheet" href="../assets/Css/dashboard.css">
+</head>
+<body>
+    <header>
+              <img src="../assets/img/logo.webp" alt="logo" width="50px">
+               <h3>FUT Dashboard</h3>
+              <div class="admin">
+                <img src="../assets/img/admin.jpeg" alt="admin">
+                <p>Ismail Dilali</p>
+              </div>
+    </header>
+    <section id="container">
+        <nav>
+            <div class="profil">
+                <img src="../assets/img/admin.jpeg" alt="admin">
+                <label for="">Ismail Dilali</label>
+              </div>
+              <div class="links">
+              <ul>
+                 <li> <a href="./Dashboard.html"> <i class="fa-solid fa-house"></i> Dashboard  </a></li>
+                 <li> <a href="./Ajouter.html"> <i class="fa-solid fa-chalkboard-user"></i> Add Player </a></li>
+                 <li> <a href="../index.html"> <i class="fa-solid fa-user"></i> User web site  </a></li>
+              </ul>
+              </div>
+        </nav>
+        <main>
+            <h1> 👋 Welcome back Mr Ismail !</h1>
+            <div class="actions">
+                <div class="cards" >
+                      <div class="card"> <div id="count-players"></div> <h5>Players Numbers</h5>  </div>
+                      <div class="card"> <div id="count-clubs"></div> <h5>Club Numbers</h5>  </div>
+                      <div class="card"> <div id="count-nationality"></div>  <h5>Natinality Numbers</h5>  </div>
+                </div>
+                <div class="forma_add">
+                      <form action="" >
+                       <div>
+
+                       </div>
+                      </form>
+                      <div class="table-container">
+                        <table id="dashboard_pl" class="display">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Position</th>
+                              <th>Rating</th>
+                              <th>status</th>
+                              <th>PAC/RAND</th>
+                              <th>SHO/DIV</th>
+                              <th>PAS/KIC</th>
+                              <th>DRI/REF</th>
+                              <th>DEF/SPD</th>
+                              <th>PHY/POS</th>
+                              <th>ACTIONS</th>
+                            </tr>
+                          </thead>
+                          <tbody id="body_table_dash">
+                                  
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="../assets/js/dashboard.js"></script>
+
+</body>
+</html>
