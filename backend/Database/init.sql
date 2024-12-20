@@ -141,3 +141,9 @@ INSERT INTO Nationality (Nat_id, Nat_nom, Nat_flag) VALUES
 
 select * FROM `Club`;
 SELECT * from `Nationality` ;
+ALTER TABLE Player MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;
+
+
+DESCRIBE TABLE Player
+
+DESCRIBE Player;

@@ -241,13 +241,6 @@ function UpdatePlayer_(e){
     localStorage.setItem("myarray",JSON.stringify(PlayerList))
   }
 
-  // if(checkfiledTextValidation(inputs)){
-    
-  // }
-  // else{
-  //   alert("none")
-  // }
-
 }
 function Delete(e){
 

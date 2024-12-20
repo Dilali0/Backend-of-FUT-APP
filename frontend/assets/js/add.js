@@ -22,7 +22,7 @@ const face = document.getElementById('face');
 // let comboNatio = document.getElementById('flag');
 
 function fetchdata() {
-    fetch('http://localhost/test.php')
+    fetch('http://localhost/index.php')
         .then((response) => response.json())
         .then((data) => {
             console.log(data.data);
@@ -57,13 +57,17 @@ formulair.addEventListener('submit', async (e)=>{
         defending_speed :document.getElementById('defending').value,
         physical_positioning : document.getElementById('physical').value
     }
-    await fetch('http://localhost/test.php',{
+    await fetch('http://localhost/index.php',{
               method : "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(infoplayer) 
     }) 
-    fetchdata();
-    console.log(infoplayer);
+
+    // const responseData = await response.json()
+
+    // console.log(responseData);
+    
+    // console.log(infoplayer);
 })
 
 
